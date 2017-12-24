@@ -57,4 +57,11 @@ The modified census dataset consists of approximately 32,000 data points, with e
 - `native-country`: Native Country (United-States, Cambodia, England, Puerto-Rico, Canada, Germany, Outlying-US(Guam-USVI-etc), India, Japan, Greece, South, China, Cuba, Iran, Honduras, Philippines, Italy, Poland, Jamaica, Vietnam, Mexico, Portugal, Ireland, France, Dominican-Republic, Laos, Ecuador, Taiwan, Haiti, Columbia, Hungary, Guatemala, Nicaragua, Scotland, Thailand, Yugoslavia, El-Salvador, Trinadad&Tobago, Peru, Hong, Holand-Netherlands)
 
 **Target Variable**
-- `income`: Income Class (<=50K, >50K)
+- `income`: Income Class (<=50K, >50K)  
+
+**Metrics used**  
+Used F-beta score as a metric that considers both precision and recall:
+$$ F_{\beta} = (1 + \beta^2) \cdot \frac{precision \cdot recall}{\left( \beta^2 \cdot precision \right) + recall} $$ 
+
+**Benchmark**  
+A naive predictor that always predicts 1 (or positive case).
