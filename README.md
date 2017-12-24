@@ -61,7 +61,7 @@ The modified census dataset consists of approximately 32,000 data points, with e
 
 **Metrics used**  
 Used F-beta score as a metric that considers both precision and recall:
-$$ F_{\beta} = (1 + \beta^2) \cdot \frac{precision \cdot recall}{\left( \beta^2 \cdot precision \right) + recall} $$ 
+$$ F_{\beta} = (1 + \beta^2) \cdot \frac{precision \cdot recall}{\left( \beta^2 \cdot precision \right) + recall} $$
 
 **Benchmark**  
 A naive predictor that always predicts 1 (or positive case).
